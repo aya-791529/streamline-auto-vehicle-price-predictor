@@ -35,7 +35,7 @@ def main(args):
     train_df = pd.read_csv(Path(args.train_data) / "data.csv")
     test_df = pd.read_csv(Path(args.test_data) / "data.csv")
 
-    # Split the data into features(X) and target(y) 
+    # Split the data into features(X) and target labels(y) 
     y_train = train_df['target_column']  # Specify the target column
     X_train = train_df.drop(columns=['target_column'])
     y_test = test_df['target_column']
