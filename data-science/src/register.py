@@ -28,10 +28,10 @@ def main(args):
     print("Registering ", args.model_name)
 
     # Load model
-    model = mlflow.sklearn.load_model(args._______)  # Load the model from model_path
+    model = mlflow.sklearn.load_model(args.model)  # Load the model from model_path
 
     # Log model using mlflow
-    mlflow.sklearn._______(model, args._______)  # Log the model using with model_name
+    mlflow.sklearn.load(model, args.model)  # Log the model using with model_name
 
     # Register logged model using mlflow
     run_id = mlflow.active_run().info.run_id
